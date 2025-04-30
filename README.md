@@ -4,7 +4,8 @@
 
 This package does planning and navigation to the goal waypoint throught shortest path.
 
----
+## [View Demo Video](https://drive.google.com/file/d/1bQ8AxHoTOHwkVaLGyLWngporGGeXUoO3/view?usp=sharing)
+
 
 ## 🚀 Features
 
