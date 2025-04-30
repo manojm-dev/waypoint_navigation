@@ -26,6 +26,12 @@ colcon build --packages-select waypoint_navigation
 source install/setup.bash
 ```
 
+## 📦 Installing Dependencies
+
+```
+cd ~/ros2_ws
+sudo apt-get update -y && rosdep update && rosdep install --from-paths src --ignore-src -y
+```
 
 ## 🛠️ Parameters
 
@@ -61,3 +67,6 @@ ros2 run waypoint_navigation waypoint_navigator --ros-args -p waypoint_goal:="B"
     ...
 }
 ```
+
+## 👨‍💻 Author
+Made with ❤️ by Manoj M
