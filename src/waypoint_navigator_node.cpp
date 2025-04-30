@@ -47,13 +47,13 @@ WaypointNavigator::WaypointNavigator()
     this->declare_parameter("odom_topic", "/odom");
     this->declare_parameter("waypoint_limit", 100);
     this->declare_parameter("json_path", default_json_path);
-    this->declare_parameter("goal_waypoint", "F");
+    this->declare_parameter("waypoint_goal", "F");
 
     // Retrieve parameter values and store them in member variables
     odom_topic_ = this->get_parameter("odom_topic").as_string();
     waypoint_limit_ = this->get_parameter("waypoint_limit").as_int();
     json_path_ = this->get_parameter("json_path").as_string();
-    waypoint_goal_ = this->get_parameter("goal_waypoint").as_string();
+    waypoint_goal_ = this->get_parameter("waypoint_goal").as_string();
 
     // Pre-allocate space in vectors based on max waypoint limit
     names_.resize(waypoint_limit_);
