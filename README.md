@@ -7,7 +7,7 @@ This package does planning and navigation to the goal waypoint throught shortest
 ## [View Demo Video](https://drive.google.com/file/d/1bQ8AxHoTOHwkVaLGyLWngporGGeXUoO3/view?usp=sharing)
 
 
-## 🚀 Features
+## 💡 What It Does
 
 - Subscribes to odometry to locate the robot.
 - Loads waypoints and their connections from a JSON file.
@@ -16,21 +16,25 @@ This package does planning and navigation to the goal waypoint throught shortest
 - Navigates through the computed path using `nav2`'s `NavigateToPose` action.
 
 
-## 🛠️ Build Instructions
+## 🧑‍💻 Setup
 
-```bash
-cd ~/ros2_ws/src
-git clone https://github.com/manojm-dev/waypoint_navigation.git
-cd ..
-colcon build --packages-select waypoint_navigation
-source install/setup.bash
+1. 📂 Clone the repository
+```
+mkdir -p ~/ros_ws/src
+cd ~/ros_ws/src
+git clone  https://github.com/manojm-dev/waypoint_navigation.git
 ```
 
-## 📦 Installing Dependencies
-
+2) 📦 Install dependencies
 ```
-cd ~/ros2_ws
+cd ~/ros_ws
 sudo apt-get update -y && rosdep update && rosdep install --from-paths src --ignore-src -y
+```
+
+3) 🛠️ Building the packages
+```
+cd ~/ros_ws
+colcon build
 ```
 
 ## 🛠️ Parameters
