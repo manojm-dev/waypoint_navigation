@@ -4,6 +4,8 @@
 
 This package does planning and navigation to the goal waypoint throught shortest path.
 
+---
+
 ## 🚀 Features
 
 - Subscribes to odometry to locate the robot.
